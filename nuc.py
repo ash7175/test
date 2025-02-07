@@ -1,12 +1,11 @@
 import random
-import collections
+
 nucleotides = ['A', 'T', 'G', 'C']
 def validate_seq(seq):
     temp_seq = seq.upper()
     for nuc in temp_seq:
         if nuc not in nucleotides:
             return 'Sequence is not valid'
-            break
     return temp_seq
     
 def count_nuc(seq):
